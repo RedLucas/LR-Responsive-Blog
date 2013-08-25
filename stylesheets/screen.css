@@ -1,0 +1,169 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../Public/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../Public/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../Public/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../Public/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../Public/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../Public/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../Public/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../Public/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../Public/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: "p22 Bayer Universal";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/p22_bayer/p22_-_p22bayer-universal-webfont.eot");
+  src: url("../fonts/p22_bayer/p22_-_p22bayer-universal-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/p22_bayer/p22_-_p22bayer-universal-webfont.woff") format("woff"), url("../fonts/p22_bayer/p22_-_p22bayer-universal-webfont.ttf") format("truetype"), url("../fonts/p22_bayer/p22_-_p22bayer-universal-webfont.svg#p22 Bayer Universal") format("svg"); }
+
+/* line 10, ../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 13, ../sass/screen.scss */
+:root {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none; }
+
+/* line 20, ../sass/screen.scss */
+body {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: #FFE3A6;
+  background-image: url(../elements.svg);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+/* line 28, ../sass/screen.scss */
+.logo {
+  width: 25%;
+  height: auto;
+  margin: 0.01%;
+  float: left; }
+
+/* line 34, ../sass/screen.scss */
+nav {
+  float: left;
+  margin-left: 16%;
+  width: 50%;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+  /* line 40, ../sass/screen.scss */
+  nav ul li {
+    display: inline-block;
+    margin-left: 2%;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    /* line 44, ../sass/screen.scss */
+    nav ul li a {
+      color: #FFCC31;
+      font-family: "p22 Bayer Universal";
+      text-decoration: none;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
+    /* line 51, ../sass/screen.scss */
+    nav ul li a:hover {
+      color: #B30B09; }
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /* line 65, ../sass/screen.scss */
+  body {
+    background-size: 99%;
+    background-position: 1300% 70px; }
+
+  /* line 69, ../sass/screen.scss */
+  .logo {
+    width: 30%;
+    height: auto;
+    margin: 0.01%; }
+
+  /* line 74, ../sass/screen.scss */
+  nav {
+    float: left;
+    margin-left: 0;
+    width: 69%; }
+    /* line 79, ../sass/screen.scss */
+    nav ul li {
+      display: inline-block;
+      margin-left: 2%; }
+      /* line 82, ../sass/screen.scss */
+      nav ul li a {
+        color: #000000;
+        font-size: 3.0em;
+        line-height: 70px; } }
+@media only screen and (min-width: 481px) and (max-width: 700px) {
+  /* line 97, ../sass/screen.scss */
+  nav ul li {
+    margin-left: 1.5%; }
+    /* line 99, ../sass/screen.scss */
+    nav ul li a {
+      font-size: 4.0em; } }
+@media only screen and (min-width: 1024px) {
+  /* line 112, ../sass/screen.scss */
+  nav ul li {
+    margin-left: 2%; }
+    /* line 114, ../sass/screen.scss */
+    nav ul li a {
+      font-size: 2.5rem; } }
+@media only screen and (min-width: 1324px) {
+  /* line 125, ../sass/screen.scss */
+  nav ul li {
+    margin-left: 2%; } }
