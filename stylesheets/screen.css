@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -65,13 +66,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url("../fonts/p22_bayer/p22_-_p22bayer-universal-webfont.eot");
   src: url("../fonts/p22_bayer/p22_-_p22bayer-universal-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/p22_bayer/p22_-_p22bayer-universal-webfont.woff") format("woff"), url("../fonts/p22_bayer/p22_-_p22bayer-universal-webfont.ttf") format("truetype"), url("../fonts/p22_bayer/p22_-_p22bayer-universal-webfont.svg#p22 Bayer Universal") format("svg"); }
 
-/* line 10, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 13, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 :root {
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
@@ -79,24 +80,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-text-size-adjust: none;
   text-size-adjust: none; }
 
-/* line 20, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 body {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  background-color: #FFE3A6;
+  background-color: #ffe3a6;
   background-image: url(../elements.svg);
   background-size: 100%;
   background-repeat: no-repeat; }
 
-/* line 28, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 .logo {
   width: 25%;
   height: auto;
   margin: 0.01%;
   float: left; }
 
-/* line 34, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 nav {
   float: left;
   margin-left: 16%;
@@ -104,14 +105,14 @@ nav {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear; }
-  /* line 40, ../sass/screen.scss */
+  /* line 44, ../sass/screen.scss */
   nav ul li {
     display: inline-block;
     margin-left: 2%;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     transition: all 0.2s linear; }
-    /* line 44, ../sass/screen.scss */
+    /* line 48, ../sass/screen.scss */
     nav ul li a {
       color: #FFCC31;
       font-family: "p22 Bayer Universal";
@@ -119,51 +120,162 @@ nav {
       -webkit-transition: all 0.2s linear;
       -moz-transition: all 0.2s linear;
       transition: all 0.2s linear; }
-    /* line 51, ../sass/screen.scss */
+    /* line 56, ../sass/screen.scss */
     nav ul li a:hover {
-      color: #B30B09; }
+      color: #B30B09;
+      cursor: default; }
+
+/* line 63, ../sass/screen.scss */
+.blog_post {
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: rgba(255, 235, 192, 0.75); }
+  /* line 65, ../sass/screen.scss */
+  .blog_post header {
+    font-family: "p22 Bayer Universal";
+    font-size: 1.5rem;
+    padding: 1%;
+    *zoom: 1; }
+    /* line 18, ../../../../Public/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    .blog_post header:before, .blog_post header:after {
+      content: " ";
+      display: table; }
+    /* line 23, ../../../../Public/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    .blog_post header:after {
+      clear: both; }
+    /* line 70, ../sass/screen.scss */
+    .blog_post header img {
+      width: 15%;
+      height: auto;
+      float: left; }
+    /* line 75, ../sass/screen.scss */
+    .blog_post header .blog_header {
+      float: left;
+      *zoom: 1;
+      width: 83%; }
+      /* line 18, ../../../../Public/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+      .blog_post header .blog_header:before, .blog_post header .blog_header:after {
+        content: " ";
+        display: table; }
+      /* line 23, ../../../../Public/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+      .blog_post header .blog_header:after {
+        clear: both; }
+      /* line 79, ../sass/screen.scss */
+      .blog_post header .blog_header h1 {
+        font-size: 2.5em; }
+      /* line 82, ../sass/screen.scss */
+      .blog_post header .blog_header h2 {
+        font-family: "Bauhaus";
+        font-size: 1.5em;
+        float: left; }
+      /* line 88, ../sass/screen.scss */
+      .blog_post header .blog_header div {
+        clear: both; }
+      /* line 92, ../sass/screen.scss */
+      .blog_post header .blog_header .post_date {
+        float: right;
+        line-height: 100%;
+        vertical-align: text-bottom;
+        font-size: 1.1em; }
+  /* line 101, ../sass/screen.scss */
+  .blog_post p {
+    *zoom: 1;
+    margin-top: 5px;
+    padding: 5px 15px; }
+    /* line 18, ../../../../Public/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    .blog_post p:before, .blog_post p:after {
+      content: " ";
+      display: table; }
+    /* line 23, ../../../../Public/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    .blog_post p:after {
+      clear: both; }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
-  /* line 65, ../sass/screen.scss */
+  /* line 119, ../sass/screen.scss */
   body {
     background-size: 99%;
     background-position: 1300% 70px; }
 
-  /* line 69, ../sass/screen.scss */
+  /* line 123, ../sass/screen.scss */
   .logo {
     width: 30%;
     height: auto;
     margin: 0.01%; }
 
-  /* line 74, ../sass/screen.scss */
+  /* line 128, ../sass/screen.scss */
   nav {
     float: left;
     margin-left: 0;
     width: 69%; }
-    /* line 79, ../sass/screen.scss */
+    /* line 133, ../sass/screen.scss */
     nav ul li {
       display: inline-block;
       margin-left: 2%; }
-      /* line 82, ../sass/screen.scss */
+      /* line 136, ../sass/screen.scss */
       nav ul li a {
         color: #000000;
         font-size: 3.0em;
-        line-height: 70px; } }
-@media only screen and (min-width: 481px) and (max-width: 700px) {
-  /* line 97, ../sass/screen.scss */
+        line-height: 70px; }
+
+  /* line 145, ../sass/screen.scss */
+  .blog_post {
+    min-height: 500px;
+    float: left;
+    width: 65.5%;
+    margin-left: 0.75%;
+    margin-top: 0;
+    font-size: 2rem; }
+    /* line 153, ../sass/screen.scss */
+    .blog_post header .blog_header {
+      float: left;
+      *zoom: 1;
+      width: 83%; }
+      /* line 18, ../../../../Public/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+      .blog_post header .blog_header:before, .blog_post header .blog_header:after {
+        content: " ";
+        display: table; }
+      /* line 23, ../../../../Public/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+      .blog_post header .blog_header:after {
+        clear: both; }
+      /* line 157, ../sass/screen.scss */
+      .blog_post header .blog_header h1 {
+        font-size: 2.8em; }
+      /* line 160, ../sass/screen.scss */
+      .blog_post header .blog_header h2 {
+        font-family: "Bauhaus";
+        font-size: 2em;
+        float: left; }
+      /* line 166, ../sass/screen.scss */
+      .blog_post header .blog_header div {
+        clear: both; }
+      /* line 170, ../sass/screen.scss */
+      .blog_post header .blog_header .post_date {
+        float: right;
+        line-height: 100%;
+        vertical-align: text-bottom;
+        font-size: 2em; } }
+@media only screen and (min-width: 481px) and (max-width: 899px) {
+  /* line 184, ../sass/screen.scss */
   nav ul li {
     margin-left: 1.5%; }
-    /* line 99, ../sass/screen.scss */
+    /* line 186, ../sass/screen.scss */
     nav ul li a {
       font-size: 4.0em; } }
-@media only screen and (min-width: 1024px) {
-  /* line 112, ../sass/screen.scss */
+@media only screen and (min-width: 900px) {
+  /* line 202, ../sass/screen.scss */
   nav ul li {
     margin-left: 2%; }
-    /* line 114, ../sass/screen.scss */
+    /* line 204, ../sass/screen.scss */
     nav ul li a {
-      font-size: 2.5rem; } }
+      font-size: 2.5rem; }
+
+  /* line 211, ../sass/screen.scss */
+  .blog_post {
+    min-height: 500px;
+    float: left;
+    width: 46.5%;
+    margin-left: 14.75%;
+    margin-top: 350px; } }
 @media only screen and (min-width: 1324px) {
-  /* line 125, ../sass/screen.scss */
+  /* line 222, ../sass/screen.scss */
   nav ul li {
     margin-left: 2%; } }

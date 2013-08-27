@@ -6,7 +6,11 @@
 @import "compass/reset";
 @import "bourbon";
 
+$background: #FFE3A6;
+
+
 @include font-face("p22 Bayer Universal", "../fonts/p22_bayer/p22_-_p22bayer-universal-webfont");
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
 * {
 	@include box-sizing(border-box);
 }
@@ -20,7 +24,7 @@
 body {
 	@include transition(all .2s linear);
 	//@include background(url(../elements.svg) #FFE3A6 contain no-repeat);
-	background-color: #FFE3A6;
+	background-color: $background;
 	background-image: url(../elements.svg);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -46,17 +50,67 @@ nav {
 				font-family: "p22 Bayer Universal";
 				text-decoration: none;
 				@include transition(all .2s linear);
+				
 				//font-size: 2.0rem;
 			}
 			a:hover {
 				color: #B30B09;
+				cursor: default;
 			}
 		}
 	}
 }
+.blog_post {
+	font-family: 'Montserrat Alternates', sans-serif;
+	header {
+		font-family: "p22 Bayer Universal";
+		font-size: 1.5rem;
+		padding: 1%;
+		@include clearfix;
+		img {
+			width: 15%;
+			height: auto;
+			float: left;
+		}
+		.blog_header {
+			float: left;
+			@include clearfix;
+			width: 83%;
+			h1 {
+				font-size: 2.5em;
+			}
+			h2 {
+				font-family: "Bauhaus";
+				font-size: 1.5em;
+				float: left;
+				
+			}
+			div {
+				clear: both;
+				
+			}
+			.post_date {
+				float: right;
+				line-height: 100%;
+				vertical-align:  text-bottom;
+				font-size: 1.1em;
+			}
+		}
+		
+	}
+	p {
+			@include clearfix;
+			margin-top: 5px;
+			padding: 5px 15px;
+		}
+		background-color: rgba(lighten($background, 5%),0.75);
+	}
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 	body {
 	
+	}
+	.blog_post {
+		
 	}
 }
 
@@ -71,26 +125,59 @@ nav {
 	height: auto;
 	margin: 0.01%;
 	}
-nav {
-	float: left;
-	margin-left: 0;
-	width: 69%;
-	ul {
-		li {
-			display: inline-block;
-			margin-left: 2%;
-			a {
-				color: #000000;
-				font-size: 3.0em;
-				line-height: 70px;
+	nav {
+		float: left;
+		margin-left: 0;
+		width: 69%;
+		ul {
+			li {
+				display: inline-block;
+				margin-left: 2%;
+				a {
+					color: #000000;
+					font-size: 3.0em;
+					line-height: 70px;
+				}
+				
 			}
-			
+		}
+	}
+	.blog_post {
+		min-height: 500px;
+		float: left;
+		width: 65.5%;
+		margin-left: 0.75%;
+		margin-top: 0;
+		font-size: 2rem;
+		header {
+			.blog_header {
+				float: left;
+				@include clearfix;
+				width: 83%;
+				h1 {
+					font-size: 2.8em;
+				}
+				h2 {
+					font-family: "Bauhaus";
+					font-size: 2em;
+					float: left;
+					
+				}
+				div {
+					clear: both;
+					
+				}
+				.post_date {
+					float: right;
+					line-height: 100%;
+					vertical-align:  text-bottom;
+					font-size: 2em;
+				}
+			}
 		}
 	}
 }
-
-}
-@media only screen and (min-width : 481px) and (max-width : 700px) {
+@media only screen and (min-width : 481px) and (max-width : 899px) {
 	nav {
 	
 	ul {
@@ -105,8 +192,11 @@ nav {
 		}
 	}
 }
+	.blog_post {
+		
+	}
 }
-@media only screen and (min-width : 1024px){
+@media only screen and (min-width : 900px){
 	nav {
 		ul {
 			li {
@@ -117,6 +207,13 @@ nav {
 				}
 			}
 		}
+	}
+	.blog_post {
+		min-height: 500px;
+		float: left;
+		width: 46.5%;
+		margin-left: 14.75%;
+		margin-top: 350px;
 	}
 }
 @media only screen and (min-width : 1324px){
@@ -129,5 +226,8 @@ nav {
 				}
 			}
 		}
+	}
+	.blog_post {
+		
 	}
 }
